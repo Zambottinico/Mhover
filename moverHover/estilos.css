@@ -1,0 +1,121 @@
+body {
+  
+  color: whitesmoke;
+  font-family:Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  user-select: none;
+  background: url(3264451.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+@font-face {
+  font-family:cubic;
+  src: url(cubic.ttf);
+}
+
+#info{
+  position: relative;
+  top: 300px;
+  height: 40px;
+
+}
+
+#jugar {
+  height: 25%;
+  width: 500px;
+  border: none;
+  color: rgb(218, 218, 218);
+  background-color: rgb(95, 0, 107);
+  position: absolute;
+  right: 35%;
+  top: 65%;
+  font-size: 70px;
+  font-family: cubic;
+}
+#jugar:hover {
+  background-color: rgb(168, 34, 162);
+}
+
+#no {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: rgba(124, 21, 138, 0.89);
+  width: 200px;
+  height: 200px;
+  left: 60%;
+  transform: translateY(-50%) translateX(-80%);
+  padding: 2%;
+}
+#no.start {
+  z-index: 6;
+}
+#no.pause {
+  z-index: 4;
+}
+
+.modal {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background: rgb(46, 25, 54);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: none;
+  z-index: 5;
+  background: url(3264451.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+.resultado {
+  position: relative;
+  color: rgb(225, 84, 230);
+  width: 500px;
+  font-size: 110px;
+  right: -373px;
+  font-family: cubic;
+  top: -15px;
+}
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: flex;
+  }
+}
+
+@keyframes aparecer {
+  100% {
+    opacity: 0;
+    display: flex;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+
+#cronos {
+  color: rgba(204, 43, 196, 0.431);
+  text-align: center;
+  font-size: 1700%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding-top: 0%;
+  top: -10%;
+  left: 0%;
+}
